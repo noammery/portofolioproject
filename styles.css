@@ -11,7 +11,16 @@ body {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(10, 92, 244, 1);
+  background: #667db6;
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  );
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+
   align-items: center;
   padding: 15px;
   transition: ease-in-out;
@@ -21,7 +30,16 @@ body {
 #page1 {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg);
+  background: #667db6;
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  );
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+
   background-attachment: fixed;
   margin: 0%;
 }
@@ -40,14 +58,21 @@ body {
 #toolbar-headline {
   font-size: 40px;
 }
+a {
+  transition: transform 1s;
+}
 a:link {
   color: white;
+  text-decoration: none;
 }
 a:visited {
   color: white;
+  text-decoration: none;
 }
 a:hover {
   color: rgba(17, 191, 240, 0.8);
+  text-decoration: none;
+  transform: scale(1.3);
 }
 #page1interior {
   width: 40vw;
@@ -146,10 +171,10 @@ a:hover {
   color: black;
   margin: 0;
   transition: ease-in-out;
-  transition:transform 1s;
+  transition: transform 1s;
 }
 #page2bigp:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
   font-weight: bold;
 }
 #page2smallp {
@@ -199,19 +224,34 @@ a:hover {
 }
 .info:hover {
   border-style: groove;
-  transform: rotate(720deg)scale(1.3);
+  transform: rotate(720deg) scale(1.3);
 }
 #page4 {
   width: 100vw;
   height: 23vh;
-  background: rgba(90, 90, 90, 0.4);
+  background: #667db6; 
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  );
+  background: linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  ); 
+
   text-align: center;
 }
 #page4btn {
   font-size: 20px;
   border-style: groove;
   padding: 3px;
-  background-color: rgba(90, 90, 90, 0.9);
+  background-color:black;
 }
 #page5 {
   width: 100vw;
@@ -231,8 +271,12 @@ a:hover {
 }
 @media only screen and (max-width: 387px) {
   #page1 {
-    height: 90vh;
-    width: 112vw;
+    height: 110vh;
+    width: 104vw;
+  }
+  #page1interior {
+    flex-direction: column;
+    margin-left: 50px;
   }
   #bigp {
     font-size: 20px;
@@ -242,67 +286,55 @@ a:hover {
     height: 150px;
   }
   #toolbar {
-    width: 112vw;
+    width: 98vw;
   }
   #toolbar-btn {
-    font-size: 10px;
-  }
-  #btn {
-    visibility: hidden;
-  }
-  #hamburger {
-    visibility: visible;
+    font-size: 12px;
   }
   #page2interior {
     width: 70vw;
+    margin-left: 30px;
   }
   #page2bigp {
     font-size: 20px;
   }
   #page2img {
-    width: 20vw;
+    width: 150px;
+    margin-top: 40px;
   }
   #page2 {
     margin-top: 40px;
+    width: 104vw;
+    flex-direction: column;
+    height: 140vh;
   }
   #page3 {
-    margin-left: 20px;
-    height: 265vh;
+
+    height: 200vh;
+  }
+  #services {
+    flex-direction: column;
+  }
+  #info1 {
+    width: 100vw;
+  }
+  #info2 {
+    width: 100vw;
+  }
+  #info3 {
+    width: 100vw;
   }
   #page4 {
-    width: 112vw;
+    width: 104;
     height: 30vh;
   }
   #page5 {
-    width: 112vw;
+    width: 104;
     height: 50vh;
   }
   .info {
     width: 33vw;
   }
-}
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #ffffff;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
 }
 .btn1 {
   background-color: #0a6bff;
