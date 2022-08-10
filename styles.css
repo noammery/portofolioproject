@@ -322,9 +322,12 @@ opacity: 1;
   transform: rotate(720deg)scale(1.3);
 }
 @media only screen and (max-width: 768px) {
+  * {
+    margin: 0%;
+  }
   #page1 {
-    height: 110vh;
-    width: 116vw;
+    height: 90vh;
+    width: 405px;
   }
   #page1interior {
     flex-direction: column;
@@ -333,12 +336,19 @@ opacity: 1;
   #bigp {
     font-size: 20px;
   }
+  #smallp {
+    padding-bottom: 10px;
+  }
+  #page1img {
+    margin-left: 0vw;
+    margin-top:5vh;
+  }
   #img1 {
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 250px;
   }
   #toolbar {
-    width: 110vw;
+    width: 375px;
   }
   #toolbar-btn {
     font-size: 12px;
@@ -353,33 +363,38 @@ opacity: 1;
   #page2img {
     width: 150px;
     margin-top: 40px;
+    margin-left: 0px;
+    height: 40vh;
   }
   #page2 {
-    margin-top: 40px;
-    width: 104vw;
+    width: 405px;
     flex-direction: column;
-    height: 140vh;
+    height: 100vh;
   }
   #page3 {
-    height: 200vh;
+    height: 115vh;
+    width: 405px;
   }
   #services {
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 10px;
   }
   #page3head {
-    margin-left: 40px;
+  padding-bottom: 20px;
   }
   #info1 {
-    width: 96vw;
+    width: 350px;
+    margin-left: 15px;
     margin-bottom: 10px;
   }
   #info2 {
-    width: 96vw;
+    width: 350px;
+    margin-left: 15px;
     margin-bottom: 10px;
   }
   #info3 {
-    width: 96vw;
+    width: 350px;
+    margin-left: 15px;
     margin-bottom: 10px;
   }
   .info:hover {
@@ -387,12 +402,12 @@ opacity: 1;
     transform: rotate(720deg)scale(1);
   }
   #page4 {
-    width: 114vw;
-    height: 30vh;
+    width: 405px;
+    height: 11vh;
   }
   #page5 {
-    width: 114vw;
-    height: 50vh;
+    width: 405px;
+    height: 20vh;
   }
   .info {
     width: 33vw;
