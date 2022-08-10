@@ -301,14 +301,34 @@ opacity: 1;
 #hamburger {
   visibility: hidden;
 }
+#services {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.info {
+  width: 25vw;
+  padding: 1px;
+  border-style: dashed;
+  border-color: black;
+  color: blue;
+  background-image: url(https://cdn.pixabay.com/photo/2013/11/24/11/10/lab-217043_1280.jpg);
+  background-attachment: fixed;
+  font-weight: bold;
+  transition: transform 1.5s;
+}
+.info:hover {
+  border-style: groove;
+  transform: rotate(720deg)scale(1.3);
+}
 @media only screen and (max-width: 387px) {
   #page1 {
     height: 110vh;
-    width: 104vw;
+    width: 116vw;
   }
   #page1interior {
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 130px;
   }
   #bigp {
     font-size: 20px;
@@ -318,7 +338,7 @@ opacity: 1;
     height: 150px;
   }
   #toolbar {
-    width: 98vw;
+    width: 110vw;
   }
   #toolbar-btn {
     font-size: 12px;
@@ -345,22 +365,33 @@ opacity: 1;
   }
   #services {
     flex-direction: column;
+    margin-left: 40px;
+  }
+  #page3head {
+    margin-left: 40px;
   }
   #info1 {
-    width: 100vw;
+    width: 96vw;
+    margin-bottom: 10px;
   }
   #info2 {
-    width: 100vw;
+    width: 96vw;
+    margin-bottom: 10px;
   }
   #info3 {
-    width: 100vw;
+    width: 96vw;
+    margin-bottom: 10px;
+  }
+  .info:hover {
+    border-style: groove;
+    transform: rotate(720deg)scale(1);
   }
   #page4 {
-    width: 104;
+    width: 114vw;
     height: 30vh;
   }
   #page5 {
-    width: 104;
+    width: 114vw;
     height: 50vh;
   }
   .info {
